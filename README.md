@@ -1,2 +1,1 @@
-# rondo_cafe
-Web for cafe "Rondo Lounge Cafe"
+Coming Soon..
