@@ -24,10 +24,6 @@ button {
     cursor: pointer;
 }
 
-img {
-    max-width: 100%;
-}
-
 /* Секция Hero */
 .hero {
     background-image: url('/images/hero1440.png');
@@ -62,7 +58,7 @@ img {
 
 .hero .links .link-1 img,
 .hero .links .link-2 img  {
-    filter: invert(23%) sepia(61%) saturate(2642%) hue-rotate(339deg) brightness(98%) contrast(96%);
+    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
     height: 70px;
     width: 450px;
 }
@@ -90,4 +86,144 @@ img {
 .hero .links .link-2 h3 {
     color: rgb(232, 12, 12);
     transform: translate(330%, -180%);
+}
+
+/* Стили для секции с категориями */
+.categoryes {
+    display: flex;
+    padding: 50px 70px;
+    /* overflow-x: scroll; 
+    white-space: nowrap; 
+    width: 100%; */
+}
+
+.categoryes .block {
+    position: relative;
+    display: inline-block; 
+    margin-right: 20px;
+    flex: 0 0 auto;
+    width: 200px;
+    opacity: 1;
+    transition: 0.2s ease-in-out;
+}
+
+.categoryes .block:hover {
+    opacity: 0.6;
+}
+
+.categoryes .block img {
+    display: block;
+    width: 200px;
+    height: 50px;
+    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+}
+
+.categoryes .block p {
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Стили для секции с товаром */
+.items {
+    padding: 50px 100px;
+}
+
+.items .items-cat img {
+    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+    height: 60px;
+    min-width: 100%;
+    z-index: 0;
+}
+
+.items .items-cat h1 {
+    position: absolute;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: -35px;
+}
+
+.items .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-left: 15px;
+}
+
+.items .container .block {
+    padding: 14px;
+    margin-bottom: 25px;
+}
+
+.items .container .block:hover {
+    border: 1px solid red;
+    border-radius: 10px;
+    padding: 13px;
+}
+
+.items .container .block .food-img {
+    width: 215px;
+    height: 215px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.items .container .block .buy-item {
+    border: 1px solid red;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.items .container .block .info-item {
+    padding-bottom: 15px;
+}
+
+.items .container .block .buy-item, 
+.items .container .block .info-item {
+    align-items: center;
+}
+
+.items .container .block .buy-item p,
+.items .container .block .info-item p {
+    margin-right: 10px; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.items .container .block .buy-item .buy {
+    float: right;
+    display: flex;
+    opacity: 1;
+    transition: 0.1s ease-in-out;
+}
+
+.items .container .block .buy-item .buy .img,
+.items .container .block .info-item .img {
+    width: 25px;
+    height: 25px;
+    opacity: 1;
+    filter: invert(100%) grayscale(100%) brightness(100%) contrast(100%);
+}
+
+.items .container .block .buy-item .buy .img:hover,
+.items .container .block .info-item .img:hover,
+.items .container .block .buy-item .buy:hover {
+    opacity: 0.7;
+}
+
+.items .container .block .info-item .img {
+    float: right;
+    margin-right: 10px;
 }
