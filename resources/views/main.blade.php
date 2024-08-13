@@ -61,10 +61,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>
@@ -87,10 +89,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>
@@ -113,10 +117,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>
@@ -139,10 +145,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>
@@ -165,10 +173,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>
@@ -191,10 +201,12 @@
             </div>
 
             <div class="buy-item">
-                <div class="buy">
-                    <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}">
-                </div>
+                <a href="{{ route('cart') }}">
+                    <div class="buy">
+                        <p>În coș</p>
+                        <img class="img" src="{{ asset('images/cart.svg') }}">
+                    </div>
+                </a>
                 <p>{{ $a->price }}</p>
             </div>
         </div>

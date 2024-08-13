@@ -3,7 +3,7 @@
 
 <!-- Название страницы -->
 @section("title") 
-    Pizza
+    {{ $item->name }}
 @endsection
 
 <!-- Основаная секция -->
@@ -20,7 +20,7 @@
                     <h3>{{ $item->wieght }}</h3>
                 </div>
 
-                <a href=""><button>În coș</button></a>
+                <a href="{{ route('cart') }}"><button>În coș</button></a>
 
                 <div class="description">
                     <span>{{ $item->description}} </span>

@@ -1,0 +1,127 @@
+/* Стили для корзины */
+.cart-page {
+    padding: 100px;
+    display: flex;
+}
+
+.cart-page .product_table {
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.cart-page .order_table {
+    max-width: 30%;
+    min-width: 30%;
+}
+
+.cart-page .product_table h1,
+.cart-page .order_table h1 {
+    width: 90%;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    border-bottom: 2px solid rgb(195, 21, 21);
+    padding-bottom: 5px;
+}
+
+.cart-page .order_table h1 {
+    text-align: center;
+}
+
+.cart-page .product_table .block {
+    display: flex;
+    padding-top: 15px;
+}
+
+.cart-page .product_table .block img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.cart-page .product_table .block .info h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.cart-page .product_table .block .info p {
+    color: white;
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+
+.cart-page .product_table .block .info .quantity button {
+    background-color: #232323;;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    transition: 0.2s ease-in-out;
+}
+
+.cart-page .product_table .block .info .quantity button:hover {
+    background-color: #292929;
+}
+
+.cart-page .product_table .block .info .quantity input {
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    width: 7%;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.cart-page .order_table table {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.cart-page .order_table table th, 
+.cart-page .order_table table td {
+    text-align: left; 
+    color: white;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.cart-page .order_table table th {
+    width: 60%; 
+}
+
+.cart-page .order_table table td {
+    width: 30%;
+}
+
+.cart-page .bottom-table p {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    border-top: 1px solid #ddd;
+    width: 90%;
+    padding-top: 15px;
+
+}
+
+.cart-page .bottom-table button {
+    background-color: rgb(195, 21, 21);
+    border: none;
+    width: 90%;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-page .bottom-table button:hover {
+    background-color: rgb(135, 24, 24);
+}

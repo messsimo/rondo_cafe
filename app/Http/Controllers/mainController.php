@@ -33,4 +33,9 @@ class mainController extends Controller {
         // Вывод информации
         return view("product", ["item" => $item->find($id)]);
     }
+
+    // Функция для отображения коризны
+    public function cartInfo() {
+        return view("cart");
+    }
 }

@@ -7,8 +7,8 @@
 
     <div class="nav">
         <ul>
-            <a href=""><li>Menu</li></a>
-            <a href=""><li>Meniu in sala</li></a>
+            <a href="#menu"><li>Menu</li></a>
+            <a href="#menu"><li>Meniu in sala</li></a>
             <a href="/cariera"><li>Cariera</li></a>
             <a href="/contacte"><li class="last">Contacte</li></a>
         </ul>
@@ -20,7 +20,7 @@
         </div>
 
         <div class="cart">
-            <a href="">
+            <a href="{{ route('cart') }}">
                 <img src="{{ asset('images/cart_bg.png') }}" alt="Cosul">
                 <img src="{{ asset('images/cart.svg') }}" alt="Cosul" class="cart-icon">
             </a>

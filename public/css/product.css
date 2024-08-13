@@ -9,7 +9,8 @@
 }
 
 .product .container-product img {
-    width: 40%;
+    min-width: 40%;
+    max-width: 40%;
     border-radius: 5px;
 }
 
@@ -60,13 +61,19 @@
 
 .product .container-product .aside .description {
     width: 75%;
-    color: white;
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.product .container-product .aside .description span {
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .product .container-product .aside .back {
     color:rgb(164, 32, 32);
     text-decoration: underline;
     font-size: 14px;
+    font-weight: 600;
 }
