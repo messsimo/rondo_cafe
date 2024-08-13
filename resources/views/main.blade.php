@@ -52,14 +52,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+                <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>
@@ -78,14 +78,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+            <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>
@@ -104,14 +104,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+            <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>
@@ -130,14 +130,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+            <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>
@@ -156,14 +156,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+            <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>
@@ -182,14 +182,14 @@
             <img class="food-img" src="{{ asset('cover_images/' . $a->photo) }}" alt="{{ $a->name }}">
 
             <div class="info-item">
-                <img class="img" src="{{ asset('images/info.svg') }}" alt="Info">
+            <a href="{{ route('product', $a->id) }}"><img class="img" src="{{ asset('images/info.svg') }}" alt="Info"></a>
                 <p>{{ $a->name }}</p>
             </div>
 
             <div class="buy-item">
                 <div class="buy">
                     <p>În coș</p>
-                    <img class="img" src="{{ asset('images/cart.svg') }}" alt="Info">
+                    <img class="img" src="{{ asset('images/cart.svg') }}">
                 </div>
                 <p>{{ $a->price }}</p>
             </div>

@@ -1,0 +1,72 @@
+/* Стили для секции с информацией о товаре */
+.product {
+    padding: 100px;
+}
+
+.product .container-product {
+    display: flex;
+    /* justify-content: space-between; */
+}
+
+.product .container-product img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.product .container-product .aside {
+    padding-left: 150px;
+    width: 60%;
+}
+
+.product .container-product .aside h1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 38px;
+    padding-bottom: 25px;
+}
+
+.product .container-product .aside .price-weight {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.product .container-product .aside .name-product {
+    width: 75%;
+}
+
+.product .container-product .aside .price-weight h3 {
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.product .container-product .aside button {
+    background-color: rgb(195, 21, 21);
+    border: none;
+    width: 75%;
+    padding: 15px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+.product .container-product .aside button:hover {
+    background-color: rgb(164, 32, 32);
+}
+
+.product .container-product .aside .description {
+    width: 75%;
+    color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.product .container-product .aside .back {
+    color:rgb(164, 32, 32);
+    text-decoration: underline;
+    font-size: 14px;
+}

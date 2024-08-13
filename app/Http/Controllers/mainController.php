@@ -7,6 +7,7 @@ use App\Models\categoryes; // Подключение модели с табои�
 use App\Models\items; // Подключение модели с табоицей товаров
 
 class mainController extends Controller {
+    // Функция вывода информации
     public function show() {
         // Подключение к таблицам
         $categoryes = new categoryes();
@@ -22,5 +23,14 @@ class mainController extends Controller {
             "product5" => $items->where("category", "=", "Pizza")->get(),
             "product6" => $items->where("category", "=", "Aperitive")->get()
         ]);
+    }
+
+    // Функция вывода динимической информации товара
+    public function info($id) {
+        // Подключение к таблице
+        $item = new items;
+
+        // Вывод информации
+        return view("product", ["item" => $item->find($id)]);
     }
 }
