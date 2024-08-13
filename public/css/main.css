@@ -139,6 +139,7 @@ button {
     filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
     height: 60px;
     min-width: 100%;
+    max-width: 100%;
     z-index: 0;
 }
 
@@ -155,32 +156,33 @@ button {
 }
 
 .items .container {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 50px;
-    padding-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    /* justify-content: start; */
 }
 
 .items .container .block {
-    padding: 14px;
-    margin-bottom: 25px;
+    padding: 15px;
+    max-width: 229px;
+    max-height: 320px;
+    padding: 15px;
 }
 
 .items .container .block:hover {
-    border: 1px solid red;
+    border: 1px solid rgb(195, 21, 21);;
     border-radius: 10px;
-    padding: 13px;
+    padding: 14px;
 }
 
 .items .container .block .food-img {
-    width: 215px;
-    height: 215px;
+    max-width: 215px;
+    max-height: 215px;
     border-radius: 10px;
     padding-bottom: 20px;
 }
 
 .items .container .block .buy-item {
-    border: 1px solid red;
+    border: 1px solid rgb(195, 21, 21);;
     border-radius: 5px;
     padding: 10px;
 }
@@ -189,9 +191,20 @@ button {
     padding-bottom: 15px;
 }
 
+.items .container .block .info-item p {
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .items .container .block .buy-item, 
 .items .container .block .info-item {
     align-items: center;
+}
+
+.items .container .block .buy-item:hover {
+    background-color: rgb(195, 21, 21);
 }
 
 .items .container .block .buy-item p,
@@ -217,9 +230,7 @@ button {
     filter: invert(100%) grayscale(100%) brightness(100%) contrast(100%);
 }
 
-.items .container .block .buy-item .buy .img:hover,
-.items .container .block .info-item .img:hover,
-.items .container .block .buy-item .buy:hover {
+.items .container .block .info-item .img:hover {
     opacity: 0.7;
 }
 

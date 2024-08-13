@@ -8,9 +8,19 @@ use App\Models\items; // Подключение модели с табоицей
 
 class mainController extends Controller {
     public function show() {
+        // Подключение к таблицам
         $categoryes = new categoryes();
         $items = new items();
 
-        return view("main", ["categoryes" => $categoryes->all(), "items" => $items->all()]);
+        // Вывод информации из таблиц
+        return view("main", [
+            "categoryes" => $categoryes->all(), 
+            "product1" => $items->where("category", "=", "Pasta & Risotto")->get(),
+            "product2" => $items->where("category", "=", "Supe")->get(),
+            "product3" => $items->where("category", "=", "Salate")->get(),
+            "product4" => $items->where("category", "=", "Fast Food")->get(),
+            "product5" => $items->where("category", "=", "Pizza")->get(),
+            "product6" => $items->where("category", "=", "Aperitive")->get()
+        ]);
     }
 }
