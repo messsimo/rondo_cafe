@@ -16,13 +16,17 @@
 
     <div class="links">
         <div class="link-1">
-            <img src="{{ asset('images/deco.png') }}">
-            <h3>Meniu</h3>
+            <a href="#menu">
+                <img src="{{ asset('images/deco.png') }}">
+                <h3>Meniu</h3>
+            </a>
         </div>
 
         <div class="link-2">
-            <img src="{{ asset('images/deco.png') }}">
-            <h3>Pizza</h3>
+            <a href="#Pizza">
+                <img src="{{ asset('images/deco.png') }}">
+                <h3>Pizza</h3>
+            </a>
         </div>
     </div>
 </div>
@@ -31,7 +35,7 @@
 <div class="categoryes">
     @foreach($categoryes as $el)
     <div class="block">
-        <a href="">
+        <a href="#{{ $el->name }}">
             <img src="{{ asset('images/deco.png') }}">
             <p>{{ $el->name }}</p>
         </a>
@@ -40,11 +44,11 @@
 </div>
 
 <!-- Блок с товароми -->
-<div class="items">
+<div class="items" id="menu">
     <!-- Категория  Pasta & Risotto -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Pasta & Risotto</h1>
+        <h1 id="Pasta & Risotto">Pasta & Risotto</h1>
     </div>
     <div class="container">
         @foreach ($product1 as $a)
@@ -70,7 +74,7 @@
     <!-- Категория  Supe -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Supe</h1>
+        <h1 id="Supe">Supe</h1>
     </div>
     <div class="container">
         @foreach ($product2 as $a)
@@ -96,7 +100,7 @@
     <!-- Категория  Salate -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Salate</h1>
+        <h1 id="Salate">Salate</h1>
     </div>
     <div class="container">
         @foreach ($product3 as $a)
@@ -122,7 +126,7 @@
     <!-- Категория Pizza -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Pizza</h1>
+        <h1 id="Pizza">Pizza</h1>
     </div>
     <div class="container">
         @foreach ($product5 as $a)
@@ -148,7 +152,7 @@
     <!-- Категория  Fast Food -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Fast Food</h1>
+        <h1 id="Fast Food">Fast Food</h1>
     </div>
     <div class="container">
         @foreach ($product4 as $a)
@@ -174,7 +178,7 @@
     <!-- Категория  Aperitive -->
     <div class="items-cat">
         <img src="{{ asset('images/items-deco.png') }}">
-        <h1>Aperitive</h1>
+        <h1 id="Aperitive">Aperitive</h1>
     </div>
     <div class="container">
         @foreach ($product6 as $a)

@@ -58,7 +58,7 @@ button {
 
 .hero .links .link-1 img,
 .hero .links .link-2 img  {
-    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+    filter: invert(29%) sepia(100%) saturate(7436%) hue-rotate(349deg) brightness(97%) contrast(80%);
     height: 70px;
     width: 450px;
 }
@@ -112,7 +112,7 @@ button {
     display: block;
     width: 200px;
     height: 50px;
-    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+    filter: invert(29%) sepia(100%) saturate(7436%) hue-rotate(349deg) brightness(97%) contrast(80%);
 }
 
 .categoryes .block p {
@@ -133,7 +133,7 @@ button {
 }
 
 .items .items-cat img {
-    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+    filter: invert(29%) sepia(100%) saturate(7436%) hue-rotate(349deg) brightness(97%) contrast(80%);
     height: 60px;
     min-width: 100%;
     max-width: 100%;

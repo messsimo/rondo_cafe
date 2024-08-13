@@ -62,7 +62,7 @@ header .cart-number .cart {
 }
 
 header .cart-number .cart img {
-    filter: invert(23%) sepia(61%) saturate(4000%) hue-rotate(339deg) brightness(98%) contrast(110%);
+    filter: invert(29%) sepia(100%) saturate(7436%) hue-rotate(349deg) brightness(97%) contrast(80%);
     width: 84px; 
     z-index: 0;
     top: 20px; 
