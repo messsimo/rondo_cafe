@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url('css/main.css') }}">
     <link rel="stylesheet" href="{{ url('css/product.css') }}">
     <link rel="stylesheet" href="{{ url('css/cart.css') }}">
+    <link rel="stylesheet" href="{{ url('css/checkout.css') }}">
     <!-- Динамическое название страниц -->
     <title>@yield("title")</title>
 </head>
@@ -19,5 +20,6 @@
     @yield("main")
     @yield("product_info")
     @yield("cart")
+    @yield("checkout")
 </body>
 </html>

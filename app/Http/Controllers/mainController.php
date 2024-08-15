@@ -39,8 +39,17 @@ class mainController extends Controller {
     public function showCart() {
         // Массив с товарами
         $cart = session()->get('cart', []);
+
+        // Подсчет общей суммы заказа
+        $subtotal = 0;
+        foreach ($cart as $item) {
+            $price = (float) $item['price'];
+            $quantity = (int) $item['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
         // Адрессация пользователя
-        return view('cart', compact('cart'));
+        return view('cart', compact('cart', 'subtotal'));
     }
 
     // Функция для отображения коризны
@@ -74,7 +83,6 @@ class mainController extends Controller {
         
         // Установка значений в массив
         Session::put("cart", $cart);
-        // Session::flush();
 
         return view('cart', compact('cart', 'subtotal'));
     }
@@ -117,7 +125,6 @@ class mainController extends Controller {
 
         // Пересчет общей цены при удалении
         $subtotal = 0;
-
         foreach ($cart as $item) {
             $price = (float) $item['price'];
             $quantity = (int) $item['quantity'];
@@ -125,5 +132,17 @@ class mainController extends Controller {
         }
 
         return view('cart', compact('cart', 'subtotal'));
+    }
+
+    // Функция обработки закзов
+    public function checkout() {
+        $cart = session()->get('cart', []);
+        $subtotal = 0;
+        foreach ($cart as $item) {
+            $price = (float) $item['price'];
+            $quantity = (int) $item['quantity'];
+            $subtotal += $price * $quantity;
+        }
+        return view('checkout', compact('cart', 'subtotal'));
     }
 }

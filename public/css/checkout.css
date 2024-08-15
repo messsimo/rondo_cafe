@@ -1,0 +1,76 @@
+/* Стили для шаблона с оплатой */
+.cart-page .table-bot p {
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    width: 90%;
+    padding-top: 15px;
+
+}
+
+.cart-page .table-bot button {
+    background-color: rgb(195, 21, 21);
+    border: none;
+    width: 90%;
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    padding: 10px 0;
+    margin-top: 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.cart-page .table-bot button:hover {
+    background-color: rgb(135, 24, 24);
+}
+
+.cart-page .table-mid form input {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 2px solid rgb(195, 21, 21);
+    width: 43%;
+    background-color: transparent;
+    transition: 0.2s ease-in-out;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.cart-page .table-mid form input:focus {
+    background-color: rgb(195, 21, 21);
+}
+
+.cart-page .product_table .form {
+    padding-top: 15px;
+}
+
+.cart-page .product_table .form form label {
+    color: white;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+.cart-page .product_table .form form label b {
+    color: rgb(195, 21, 21);
+}
+
+.cart-page .product_table .form form input {
+    width: 70%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.cart-page .product_table .form form input:focus {
+    border: 1px solid grey;
+    padding: 9px;
+}

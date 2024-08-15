@@ -58,8 +58,8 @@
             </div>
 
             <div class="bottom-table">
-                <p>Total: {{ $subtotal + 50}} mdl</p>
-                <a href=""><button>Comandă</button></a>
+                <p>Total: {{ $subtotal + 50 }} mdl</p>
+                <a href="{{ route('checkout') }}"><button>Comandă</button></a>
             </div>
         </div>
         @endif
