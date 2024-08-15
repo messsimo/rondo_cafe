@@ -29,11 +29,13 @@
                                 <button class="quantity-btn" name="action" value="increase">+</button>
                             </form>
                         </div>
+
+                        <a href="{{ route('delete', $product['id']) }}" class="delete">Şterge</a>
                     </div>
                 </div>
             @endforeach
             @else
-                <p class="nothing">Coșul tău este gol</p>
+                <p class="nothing">În coș nu este nimic</p>
             @endif
             </div>
         </div>
@@ -45,7 +47,7 @@
                 <tbody>
                     <tr>
                         <th>Subtotal</th>
-                        <td></td>
+                        <td>{{ $subtotal }} mdl</td>
                     </tr>
                     <tr>
                         <th>Livrare</th>
@@ -56,7 +58,7 @@
             </div>
 
             <div class="bottom-table">
-                <p>Total: </p>
+                <p>Total: {{ $subtotal + 50}} mdl</p>
                 <a href=""><button>Comandă</button></a>
             </div>
         </div>

@@ -55,6 +55,10 @@
     padding-bottom: 5px;
 }
 
+.cart-page .product_table .block .info .quantity {
+    padding-bottom: 7px;
+}
+
 .cart-page .product_table .block .info .quantity button {
     background-color: #232323;;
     padding: 5px 10px;
@@ -133,4 +137,14 @@
     padding-top: 15px;
     font-size: 38px;
     font-weight: 400;
+}
+
+.cart-page .info .delete {
+    color:rgb(195, 21, 21);
+    text-decoration: underline;
+    transition: 0.1s ease-in-out;
+}
+
+.cart-page .info .delete:hover {
+    color:rgb(135, 24, 24);
 }

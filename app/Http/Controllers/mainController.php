@@ -61,15 +61,22 @@ class mainController extends Controller {
                 'photo' => $product->photo,
                 "quantity" => 1,
                 "price" => $product->price,
-                "total" => $product->price
             ];
         }
 
+        // Подсчет общей суммы заказа
+        $subtotal = 0;
+        foreach ($cart as $item) {
+            $price = (float) $item['price'];
+            $quantity = (int) $item['quantity'];
+            $subtotal += $price * $quantity;
+        }
+        
         // Установка значений в массив
         Session::put("cart", $cart);
         // Session::flush();
 
-        return view('cart', compact('cart'));
+        return view('cart', compact('cart', 'subtotal'));
     }
 
     // Функция с добавление и убавлением кол-во продуктов
@@ -88,16 +95,35 @@ class mainController extends Controller {
                 }
             } elseif ($action === "increase") {
                 $cart[$id]['quantity'] += 1;
-
-                $quantity = isset($cart[$id]['quantity']) ? (float) $cart[$id]['quantity'] : 0;
-                $price = isset($cart[$id]['price']) ? (float) $cart[$id]['price'] : 0.0;
-
-                $cart[$id]['total'] = $quantity * $price;
             }
             // Сохраняем обновленную корзину в сессии
             session()->put('cart', $cart);
         }
 
         return redirect()->back();
+    }
+
+    // Функция удаления товара из корзины
+    public function deleteProduct($id) {
+        // Корзина с сессиями
+        $cart = session()->get('cart', []);
+    
+        // Проверяем существует ли продукт в корзине
+        if (array_key_exists($id, $cart)) {
+            unset($cart[$id]); // Удаление товара из массива
+    
+            session()->put('cart', $cart); // Обновление массива
+        }
+
+        // Пересчет общей цены при удалении
+        $subtotal = 0;
+
+        foreach ($cart as $item) {
+            $price = (float) $item['price'];
+            $quantity = (int) $item['quantity'];
+            $subtotal += $price * $quantity;
+        }
+
+        return view('cart', compact('cart', 'subtotal'));
     }
 }

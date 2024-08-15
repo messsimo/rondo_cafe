@@ -20,7 +20,7 @@
                     <h3>{{ $item->wieght }}</h3>
                 </div>
 
-                <a href="{{ route('cart') }}"><button>În coș</button></a>
+                <a href="{{ route('cart', $item->id) }}"><button>În coș</button></a>
 
                 <div class="description">
                     <span>{{ $item->description}} </span>

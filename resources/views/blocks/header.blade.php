@@ -7,8 +7,8 @@
 
     <div class="nav">
         <ul>
-            <a href="#menu"><li>Menu</li></a>
-            <a href="#menu"><li>Meniu in sala</li></a>
+            <a href="{{ route('main') }}"><li>Menu</li></a>
+            <a href="{{ route('main') }}"><li>Meniu in sala</li></a>
             <a href="/cariera"><li>Cariera</li></a>
             <a href="/contacte"><li class="last">Contacte</li></a>
         </ul>
