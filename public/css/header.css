@@ -6,11 +6,11 @@ header {
 
 header .logo {
     padding-left: 100px;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 header .nav {
-    padding-top: 60px;
+    padding-top: 40px;
 }
 
 header .logo img {
@@ -45,7 +45,7 @@ header .nav ul .last {
 
 header .cart-number {
     display: flex;
-    padding-top: 70px;
+    padding-top: 50px;
     padding-right: 100px;
 }
 
@@ -80,6 +80,6 @@ header .cart-number .cart .cart-icon {
     width: 32px; 
     position: absolute;
     z-index: 1;
-    right: 127px;
-    top: 65px;
+    right: 126px;
+    top: 45px;
 }

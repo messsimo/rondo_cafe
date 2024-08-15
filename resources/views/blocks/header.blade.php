@@ -20,7 +20,7 @@
         </div>
 
         <div class="cart">
-            <a href="{{ route('cart') }}">
+        <a href="{{ route('showCart') }}">
                 <img src="{{ asset('images/cart_bg.png') }}" alt="Cosul">
                 <img src="{{ asset('images/cart.svg') }}" alt="Cosul" class="cart-icon">
             </a>

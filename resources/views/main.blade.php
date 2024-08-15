@@ -61,7 +61,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">
@@ -89,7 +89,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">
@@ -117,7 +117,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">
@@ -145,7 +145,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">
@@ -173,7 +173,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">
@@ -201,7 +201,7 @@
             </div>
 
             <div class="buy-item">
-                <a href="{{ route('cart') }}">
+                <a href="{{ route('cart', $a->id) }}">
                     <div class="buy">
                         <p>În coș</p>
                         <img class="img" src="{{ asset('images/cart.svg') }}">

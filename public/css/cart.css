@@ -34,8 +34,10 @@
 }
 
 .cart-page .product_table .block img {
-    width: 100px;
-    height: 100px;
+    min-width: 120px;
+    min-height: 120px;
+    max-width: 120px;
+    max-height: 120px;
     border-radius: 5px;
     margin-right: 20px;
 }
@@ -124,4 +126,11 @@
 
 .cart-page .bottom-table button:hover {
     background-color: rgb(135, 24, 24);
+}
+
+.nothing {
+    color: white;
+    padding-top: 15px;
+    font-size: 38px;
+    font-weight: 400;
 }

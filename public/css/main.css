@@ -9,6 +9,10 @@
     font-weight: 400;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     /* background: rgb(27,26,27);
     background: linear-gradient(0deg, rgba(27,26,27,1) 0%, rgba(10,10,10,1) 100%); */
@@ -92,6 +96,9 @@ button {
 .categoryes {
     display: flex;
     padding: 50px 70px;
+    /* position: sticky;
+    top: 0;
+    background-color: #060606; */
 }
 
 .categoryes .block {
