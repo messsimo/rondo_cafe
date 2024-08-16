@@ -83,3 +83,38 @@ header .cart-number .cart .cart-icon {
     right: 126px;
     top: 45px;
 }
+
+header .burger {
+    display: none;
+}
+
+header .card-burger {
+    padding-top: 15px;
+    position: absolute;
+    top: 65px;
+    left: 50px;
+    display: none;
+}
+
+header .card-burger ul {
+    display: flex;
+}
+
+header .card-burger ul li {
+    color: white;
+    list-style: none;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+header .card-burger ul li a {
+    transition: 0.2s ease-in-out;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+header .card-burger ul li a:hover {
+    color: rgb(195, 21, 21);
+}

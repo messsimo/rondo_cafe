@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="{{ url('css/product.css') }}">
     <link rel="stylesheet" href="{{ url('css/cart.css') }}">
     <link rel="stylesheet" href="{{ url('css/checkout.css') }}">
+    <link rel="stylesheet" href="{{ url('css/header_adapt.css') }}">
     <!-- Динамическое название страниц -->
     <title>@yield("title")</title>
 </head>
@@ -21,5 +22,8 @@
     @yield("product_info")
     @yield("cart")
     @yield("checkout")
+
+    <!-- Подключение JS -->
+    <script src="{{ url('js/burger.js') }}"></script>
 </body>
 </html>

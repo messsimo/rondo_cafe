@@ -1,6 +1,19 @@
 <!-- Секция с шапкой сайта -->
 @section("header")
 <header>
+    <div class="burger">
+        <img src="{{ asset('images/burger.png') }}" alt="Menu" id="burger">
+    </div>
+
+    <div class="card-burger">
+        <ul>
+            <a href="{{ route('main') }}"><li>Menu</li></a>
+            <a href="{{ route('main') }}"><li>Meniu in sala</li></a>
+            <a href="/cariera"><li>Cariera</li></a>
+            <a href="/contacte"><li class="last">Contacte</li></a>
+        </ul>
+    </div>
+
     <div class="logo">
        <a href="{{ route('main') }}"><img src="{{ asset('images/logo_header.png') }}"></a>
     </div>
