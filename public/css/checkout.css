@@ -25,22 +25,17 @@
     background-color: rgb(135, 24, 24);
 }
 
-.cart-page .table-mid form input {
+.cart-page .table-mid .radio-label {
     color: white;
-    font-size: 14px;
-    text-align: center;
-    padding: 15px 0;
-    border-radius: 5px;
-    border: 2px solid rgb(195, 21, 21);
-    width: 43%;
-    background-color: transparent;
-    transition: 0.2s ease-in-out;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
+    margin-right: 20%;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.cart-page .table-mid form input:focus {
-    background-color: rgb(195, 21, 21);
+.cart-page .table-mid input {
+    vertical-align: middle;
+    margin-right: 5px;
+    margin-top: -3px;
 }
 
 .cart-page .product_table .form {
@@ -73,4 +68,38 @@
 .cart-page .product_table .form form input:focus {
     border: 1px solid grey;
     padding: 9px;
+}
+
+.alert {
+    background-color:rgb(195, 21, 21);
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 82%;
+}
+
+.alert ul li {
+    color: white;
+    font-size: 16px;
+    font-weight: 450;
+    margin-bottom: 5px;
+    list-style: none;
+}
+
+.alert-success {
+    background-color: green;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 82%;
+}
+
+.alert-success span {
+    color: white;
+    font-size: 16px;
+    font-weight: 450;
+}
+
+.go-home-alert {
+    text-align: center;
 }
