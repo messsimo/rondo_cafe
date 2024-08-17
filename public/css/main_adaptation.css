@@ -1,4 +1,4 @@
-/* Адаптация главной старницы */
+/* Адаптация для hero */
 @media (max-width: 1920px) {
     .hero {
         background-image: url(/images/hero1920.png);
@@ -93,5 +93,19 @@
 
     .hero .logo img {
         width: 230px;
+    }
+}
+
+/* Адаптация для блока с Продукцией */
+@media (max-width: 659px) {
+    .items {
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .items .items-cat h1 {
+        font-size: 28px;
     }
 }

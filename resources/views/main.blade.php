@@ -34,12 +34,12 @@
 <!-- Блок с категориями -->
 <div class="categoryes">
     @foreach($categoryes as $el)
-    <div class="block">
-        <a href="#{{ $el->name }}">
-            <img src="{{ asset('images/deco.png') }}">
-            <p>{{ $el->name }}</p>
-        </a>
-    </div>
+        <div class="block">
+            <a href="#{{ $el->name }}">
+                <img src="{{ asset('images/deco.png') }}">
+                <p>{{ $el->name }}</p>
+            </a>
+        </div>
     @endforeach
 </div>
 

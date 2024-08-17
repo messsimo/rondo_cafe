@@ -96,9 +96,14 @@ button {
 .categoryes {
     display: flex;
     padding: 50px 70px;
-    /* position: sticky;
-    top: 0;
-    background-color: #060606; */
+    overflow-x: scroll; /* Добавляем горизонтальный скролл */
+    overflow-y: hidden; /* Убираем вертикальный скролл */
+    -webkit-overflow-scrolling: touch; /* Для плавного скроллинга на iOS */
+    scroll-snap-type: x mandatory; /* Для привязки элементов к позициям при скроллинге (опционально) */
+}
+
+.categoryes::-webkit-scrollbar {
+    display: none; /* Для Chrome, Safari и других WebKit-браузеров */
 }
 
 .categoryes .block {
