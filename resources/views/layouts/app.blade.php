@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="{{ url('css/product.css') }}">
     <link rel="stylesheet" href="{{ url('css/cart.css') }}">
     <link rel="stylesheet" href="{{ url('css/checkout.css') }}">
-    <link rel="stylesheet" href="{{ url('css/header_adapt.css') }}">
+    <link rel="stylesheet" href="{{ url('css/header_adaptation.css') }}">
+    <link rel="stylesheet" href="{{ url('css/main_adaptation.css') }}">
     <!-- Динамическое название страниц -->
     <title>@yield("title")</title>
 </head>

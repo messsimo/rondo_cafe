@@ -1,3 +1,4 @@
+/* Адаптация шапки */
 @media (max-width: 1024px) {
     header .logo img {
         width: 70px;
