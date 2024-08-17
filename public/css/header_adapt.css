@@ -110,3 +110,14 @@
         padding-left: 50px;
     }
 }
+
+@media (max-width: 490px) {
+    header .cart-number .number {
+        display: none;
+    }
+
+    header .logo {
+        display: block;
+        margin-left: 0px;
+    }
+}
