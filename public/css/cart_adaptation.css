@@ -58,3 +58,10 @@
         max-height: 145px;
     }
 }
+
+/* Адапатация для Checkout */
+@media (max-width: 1024px) {
+    .cart-page .table-bot button {
+        width: 100%;
+    }
+}

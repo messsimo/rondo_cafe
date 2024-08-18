@@ -27,7 +27,7 @@
 
 .cart-page .table-mid .radio-label {
     color: white;
-    margin-right: 20%;
+    margin-right: 5%;
     font-size: 16px;
     font-weight: 500;
 }
@@ -75,7 +75,7 @@
     margin-top: 15px;
     padding: 15px;
     border-radius: 5px;
-    width: 82%;
+    width: 210px;
 }
 
 .alert ul li {
@@ -91,7 +91,7 @@
     margin-top: 15px;
     padding: 15px;
     border-radius: 5px;
-    width: 82%;
+    width: 210px;
 }
 
 .alert-success span {
