@@ -1,0 +1,60 @@
+/* Адаптация для корзины */
+@media (max-width: 1024px) {
+    .cart-page .order_table table td {
+        width: 40%;
+    }
+}
+
+@media (max-width: 980px) {
+    .cart-page {
+        display: block;
+    }
+
+    .cart-page .product_table h1, .cart-page .order_table h1 {
+        width: 100%;
+    }
+
+    .cart-page .product_table {
+        width: 100%;
+        margin-bottom: 50px;
+        max-width: none;
+        min-width: none;
+    }
+
+    .cart-page .order_table {
+        width: 100%;
+        max-width: none;
+        min-width: none;
+    }
+
+    .cart-page .order_table table th {
+        width: 80%;
+    }
+
+    .cart-page .bottom-table p {
+        width: 100%;
+    }
+
+    .cart-page .order_table table td {
+        width: 100px;
+    }
+
+    .cart-page .bottom-table button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cart-page {
+        padding: 50px;
+    }
+}
+
+@media (max-width: 440px) {
+    .cart-page .product_table .block img {
+        min-width: 130px;
+        min-height: 145px;
+        max-width: 130px;
+        max-height: 145px;
+    }
+}

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="{{ url('css/header_adaptation.css') }}">
     <link rel="stylesheet" href="{{ url('css/main_adaptation.css') }}">
     <link rel="stylesheet" href="{{ url('css/product_adaptation.css') }}">
+    <link rel="stylesheet" href="{{ url('css/cart_adaptation.css') }}">
     <!-- Динамическое название страниц -->
     <title>@yield("title")</title>
 </head>

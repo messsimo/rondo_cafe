@@ -82,10 +82,12 @@
     width: 7%;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    border: none;
+    outline: none;
 }
 
 .cart-page .order_table table {
-    width: 100%;
+    width: 90%;
     padding-top: 15px;
 }
 
@@ -97,12 +99,12 @@
     font-size: 20px;
 }
 
-.cart-page .order_table table th {
-    width: 60%; 
-}
+/* .cart-page .order_table table th {
+    width: 700px;
+} */
 
 .cart-page .order_table table td {
-    width: 30%;
+    width: 100px;
 }
 
 .cart-page .bottom-table p {
