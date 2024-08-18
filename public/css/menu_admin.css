@@ -76,3 +76,11 @@ button {
     background-color: black;
     color: white;
 }
+
+.admin_menu .gohome {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    padding-left: 25px;
+    margin-top: 25px;
+}

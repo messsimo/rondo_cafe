@@ -10,4 +10,6 @@
             <a href="{{ route('orders') }}">Заказы</a>
             <a href="">Товары</a>
         </div>
+
+        <a href="{{ route('orders') }}" class="gohome">Main page</a>
     </div>

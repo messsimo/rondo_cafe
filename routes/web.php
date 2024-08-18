@@ -24,3 +24,4 @@ Route::post('/checkout', [orderController::class, 'makeOrder'])->name("make_orde
 
 // Отслеживание админ панели
 Route::get('/admin', [adminController::class, 'ordersAdmin'])->name("orders");
+Route::get('/order_info/{id}', [adminController::class, 'orderInfo'])->name("order_info");

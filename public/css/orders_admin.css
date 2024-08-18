@@ -1,0 +1,96 @@
+.orders {
+    padding: 30px 100px;
+}
+
+.orders h1 {
+    font-weight: bold;
+    font-size: 38px;
+    padding-bottom: 25px;
+}
+
+.orders .container-orders table {
+    width: 880px;
+    border-collapse: collapse;
+}
+
+.orders .container-orders table thead tr {
+    border-bottom: 2px solid black;
+}
+
+.orders .container-orders table tr th {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.orders .container-orders table tbody tr {
+    border-bottom: 1px solid #333;
+}
+
+.orders .container-orders table tbody tr td {
+    text-align: left;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.orders .container-orders table tbody tr td a {
+    background-color: rgb(95, 95, 95);
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.orders .container-orders table tbody tr td a:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+.orders .container-orders table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.pagination ul {
+    list-style: none;
+}
+
+.page-item.active .page-link {
+    background-color: #008B8B;
+    border-color: #008B8B;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.page-link {
+    color: #0095B6;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.page-item.active .page-link:hover {
+    background-color: #016161;
+}
+
+/* Стили для карточки заказа */
+.orders .container-orders p {
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.orders .container-orders p b {
+    font-weight: bold;
+}
+
+.orders .order-info {
+    width: 700px;
+}
