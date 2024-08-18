@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 // Подключение контроллеров
 use App\Http\Controllers\mainController;
 use App\Http\Controllers\orderController;
+use App\Http\Controllers\adminController;
 
 // Отслеживание главной страницы
 Route::get('/', [mainController::class, 'show'])->name("main");
@@ -20,3 +21,6 @@ Route::get('/cart/delete/{id}', [mainController::class, 'deleteProduct'])->name(
 // Отслеживание действий с оформлением заказа
 Route::get('/checkout', [mainController::class, 'checkout'])->name("checkout");
 Route::post('/checkout', [orderController::class, 'makeOrder'])->name("make_order");
+
+// Отслеживание админ панели
+Route::get('/admin', [adminController::class, 'ordersAdmin'])->name("orders");

@@ -1,0 +1,78 @@
+/* Подключение шрифтов */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Базовые стили */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Стили для меню */
+.admin_menu {
+    background-color: #008B8B;
+    width: 20%;
+    height: 100vh;
+}
+
+.admin_menu .logo {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.admin_menu .logo h1,
+.admin_menu .logo h1 b {
+    font-weight: bold;
+    font-size: 38px;
+    text-align: center;
+    color: white;
+}
+
+.admin_menu .logo h1 b {
+    color: rgb(255, 0, 0);
+}
+
+.admin_menu .logo h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.admin_menu .container {
+    padding-left: 20px;
+}
+
+.admin_menu .container a {
+    display: block;
+    background-color: white;
+    width: 70%;
+    margin-bottom: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    color: rgb(111, 111, 111);
+    font-size: 16px;
+    transition: 0.4s ease-in-out;
+}
+
+.admin_menu .container a:hover {
+    background-color: black;
+    color: white;
+}

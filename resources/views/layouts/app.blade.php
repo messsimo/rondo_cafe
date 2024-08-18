@@ -20,11 +20,14 @@
     <!-- Подключение шапки сайта -->
     @include("blocks.header")
 
-    <!-- Подключение секций -->
+    <!-- Подключение секций сайта -->
     @yield("main")
     @yield("product_info")
     @yield("cart")
     @yield("checkout")
+
+    <!-- Подключение секций админ панели -->
+    @yield("admin_panel")
 
     <!-- Подключение JS -->
     <script src="{{ url('js/burger.js') }}"></script>
