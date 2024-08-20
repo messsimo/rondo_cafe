@@ -108,3 +108,19 @@
 .orders .product-conteiner-2 .product-image img {
     border-radius: 5px;
 }
+
+.orders .product-conteiner-2 .product-image .errors-editForm {
+    background-color: red;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.orders .product-conteiner-2 .product-image .errors-editForm ul {
+    list-style: none;
+    padding: 15px;
+}
+
+.orders .product-conteiner-2 .product-image .errors-editForm ul li {
+    font-size: 14px;
+    color: white;
+}

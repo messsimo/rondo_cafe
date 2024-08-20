@@ -35,7 +35,7 @@
     font-weight: 400;
 }
 
-.orders .container-orders table tbody tr td a {
+.orders .container-orders table tbody tr td .btn-orders {
     background-color: rgb(95, 95, 95);
     color: white;
     padding: 7px 20px;
@@ -43,7 +43,7 @@
     transition: 0.3s ease-in-out;
 }
 
-.orders .container-orders table tbody tr td a:hover {
+.orders .container-orders table tbody tr td .btn-orders:hover {
     background-color: rgb(46, 46, 46);
 }
 

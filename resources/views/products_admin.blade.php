@@ -11,7 +11,7 @@
     <div class="orders">
         <h1>All orders</h1>
     
-        <a href="{{ route('add_product') }}" class="add-product">Add new</a>
+        <a href="{{ route('add_product_form') }}" class="add-product">Add new</a>
 
         <!-- Вывод оповщения об удалении -->
         @if (session('delete'))

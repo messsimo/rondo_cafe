@@ -9,6 +9,7 @@ use App\Models\items;
 use App\Models\categoryes;
 // Подключение модулей 
 use App\Http\Requests\productRequest;
+use App\Http\Requests\addproductRequest;
 
 class adminController extends Controller {
     // Функция показа содержимого
@@ -86,10 +87,10 @@ class adminController extends Controller {
             $items->photo = $filename;
             $items->save();
     
+            // Переадрессция
             return redirect()->route("products")->with("edit", "Product #$id was edited");
         }
     
-
         // Сохранения данных
         $items->save();
 
@@ -98,5 +99,45 @@ class adminController extends Controller {
         
         // Переадрессция
         return redirect()->route("products")->with("edit", "Product #$id was edited");
+    }
+
+    // Функция отображения формы добавления товара
+    public function showAddProduct() {
+        // Выборка из БД
+        $categoryes = new categoryes();
+        return view("add_product", ['categoryes' => $categoryes->all()]);
+    }
+
+    // Функция добавления нового товара
+    public function addProduct(addproductRequest $req) {
+        // Выборка из таблицы
+        $items = new items();
+
+        // Добавление измений в запись
+        $items->name = $req->input("name");
+        $items->category = $req->input("category");
+        $items->price = $req->input("price");
+        $items->wieght = $req->input("wieght");
+        $items->description = $req->input("description");
+
+        // Добавление нового фото
+        if ($req->hasFile('photo')) {
+            // Сохранение фото в папке локального сервера
+            $file = $req->file('photo');
+            $filename = time() . '.' . $file->getClientOriginalExtension(); // Название файла (по времени)
+            $file->move(public_path('cover_images'), $filename);
+            
+            // Сохранения фото в БД
+            $items->photo = $filename;
+            $items->save();
+        }
+
+        // Сохранение новых значений
+        $items->save();
+
+        Session::flash("add", "New product was added");
+        
+        // Переадрессция
+        return redirect()->route("products")->with("add", "New product was added");
     }
 }
