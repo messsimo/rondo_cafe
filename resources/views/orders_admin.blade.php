@@ -17,7 +17,7 @@
                 <tr>
                     <th>#</th>
                     <th>Customer</th>
-                    <th>Amount</th>
+                    <th>Total</th>
                     <th>Ordered</th>
                     <th>Details</th>
                 </tr>
@@ -28,7 +28,7 @@
                 <tr>
                     <td>{{ $el->id }}</td>
                     <td>{{ $el->name }}</td>
-                    <td>{{ $el->total }}</td>
+                    <td>{{ $el->total }} mdl</td>
                     <td>{{ $el->created_at }}</td>
                     <td><a href="{{ route('order_info', $el->id )}}">Details</a></td>
                 </tr>

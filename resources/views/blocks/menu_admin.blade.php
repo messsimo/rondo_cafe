@@ -8,7 +8,7 @@
 
         <div class="container">
             <a href="{{ route('orders') }}">Заказы</a>
-            <a href="">Товары</a>
+            <a href="{{ route('products') }}">Товары</a>
         </div>
 
         <a href="{{ route('orders') }}" class="gohome">Main page</a>

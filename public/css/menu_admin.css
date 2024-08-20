@@ -29,8 +29,9 @@ button {
 /* Стили для меню */
 .admin_menu {
     background-color: #008B8B;
-    width: 20%;
-    height: 100vh;
+    min-height: 250vh;
+    border-right: 1px solid #ddd;
+    padding: 0 25px;
 }
 
 .admin_menu .logo {
@@ -57,7 +58,7 @@ button {
 }
 
 .admin_menu .container {
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 
 .admin_menu .container a {
@@ -81,6 +82,6 @@ button {
     text-align: center;
     color: white;
     text-decoration: underline;
-    padding-left: 25px;
+    /* padding-left: 25px; */
     margin-top: 25px;
 }

@@ -6,6 +6,7 @@
     <!-- Подключение CSS -->
     <link rel="stylesheet" href="{{ asset('css/menu_admin.css') }}">
     <link rel="stylesheet" href="{{ asset('css/orders_admin.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/products_admin.css') }}">
     <!-- Динамическое название страниц -->
     <title>@yield("title")</title>
 </head>
@@ -16,5 +17,7 @@
     <!-- Подключение секций админ панели -->
     @yield("orders_admin")
     @yield("order_info")
+    @yield("products_info")
+    @yield("products_edit")
 </body>
 </html>

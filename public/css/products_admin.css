@@ -1,0 +1,110 @@
+/* Стили для всех товаров */
+.orders .container-orders table tbody tr td a {
+    background-color: red;
+    color: white;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.orders .container-orders table tbody tr td a:hover {
+    background-color: rgb(181, 0, 0);
+}
+
+.orders .container-orders table tbody tr td .edit-prod {
+    background-color: green;
+}
+
+.orders .container-orders table tbody tr td .edit-prod:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+.orders .add-product {
+    background-color: green;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.orders .add-product:hover {
+    background-color: rgb(0, 100, 0);
+}
+
+.orders .product-conteiner {
+    padding-top: 25px;
+}
+
+.orders .alert {
+    width: 200px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 5px;
+    margin-top: 25px;
+    padding: 10px 15px; 
+}
+
+/* Стили для формы редактирования */
+.orders .product-conteiner-2 form {
+    width: 450px;
+}
+
+.orders .product-conteiner-2 form label {
+    color: grey;
+    font-size: 16px;
+}
+
+.orders .product-conteiner-2 form input,
+.orders .product-conteiner-2 form textarea {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    outline: none;
+}
+
+.orders .product-conteiner-2 form select {
+    width: 40%;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.orders .product-conteiner-2 form textarea {
+    height: 100px;
+}
+
+.orders .product-conteiner-2 form button {
+    width: 106%;
+    background-color: green;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.orders .product-conteiner-2 {
+    display: flex;  
+}
+
+.orders .product-conteiner-2 .product-image {
+    padding-left: 100px;
+}
+
+.orders .product-conteiner-2 .product-image p {
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+.orders .product-conteiner-2 .product-image img {
+    border-radius: 5px;
+}
