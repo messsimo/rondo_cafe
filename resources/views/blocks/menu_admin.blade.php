@@ -11,5 +11,8 @@
             <a href="{{ route('products') }}">Товары</a>
         </div>
 
-        <a href="{{ route('orders') }}" class="gohome">Main page</a>
+        <div class="links">
+            <a href="{{ route('orders') }}" class="gohome">Main page</a>
+            <a href="{{ route('main') }}" class="gohome">Official page</a>
+        </div>
     </div>

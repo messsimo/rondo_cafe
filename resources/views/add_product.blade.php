@@ -35,7 +35,7 @@
                 <label for="photo">Photo</label><br>
                 <input type="file" name="photo" id="photo"><br>
 
-                <button type="submit">Edit</button>
+                <button type="submit">Add new product</button>
             </form>
 
             <div class="product-image">
