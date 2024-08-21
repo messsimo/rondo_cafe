@@ -15,7 +15,7 @@ class adminController extends Controller {
     // Функция показа содержимого
     public function ordersAdmin() {
         // Объявление переменной с данными их таблицы
-        $orders = Orders::orderBy("id", "desc")->paginate(25);
+        $orders = Orders::orderBy("id", "desc")->paginate(5);
 
         // Передача данных в шаблон
         return view("orders_admin", ["orders" => $orders]);
