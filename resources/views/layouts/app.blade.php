@@ -28,6 +28,7 @@
 
     <!-- Подключение секций админ панели -->
     @yield("admin_panel")
+    @yield("login_admin")
 
     <!-- Подключение JS -->
     <script src="{{ url('js/burger.js') }}"></script>

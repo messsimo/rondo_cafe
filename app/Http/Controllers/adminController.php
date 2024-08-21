@@ -140,4 +140,24 @@ class adminController extends Controller {
         // Переадрессция
         return redirect()->route("products")->with("add", "New product was added");
     }
+
+    // Функция отображения формы входа в админ панель
+    public function loginAdmin() {
+        // Отображение шаблона
+        return view("login");
+    }
+
+    // Функция проверки фомры входа в админ панель
+    public function loginAdminForm() {
+        // Переменные с данными входа
+        $login = "admin";
+        $password = "admin123";
+        
+        // Условие входа
+        if ($login != "admin" && $password != "admin123") {
+            return view("login")->with("error", "Your login or password are incorrect");
+        } else {
+            return redirect()->route("orders");
+        }
+    }
 }

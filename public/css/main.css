@@ -247,3 +247,78 @@ button {
     float: right;
     margin-right: 10px;
 }
+
+/* Стили для формы входа в админ панель */
+.loginForm {
+    padding: 100px;
+    display: grid;
+    place-items: center;
+}
+
+.loginForm form {
+    padding: 15px;
+    width: 400px;
+}
+
+.loginForm form h1 {
+    font-size: 32px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.loginForm form label {
+    color: grey;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.loginForm form input {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.loginForm form button {
+    width: 104%;
+    margin-top: 10px;
+    padding: 10px 0;
+    background-color:rgb(232, 12, 12);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    transition: 0.2s ease-in-out;
+}
+
+.loginForm form button:hover {
+    background-color:rgb(195, 21, 21);
+}
+
+.loginForm .errors-form {
+    background-color: rgb(232, 12, 12);
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.loginForm .errors-form ul li {
+    padding-left: 8px;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.loginForm .errors-form ul li:last-child {
+    margin-bottom: 0;
+}

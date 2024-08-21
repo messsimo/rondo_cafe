@@ -23,6 +23,8 @@ Route::get('/checkout', [mainController::class, 'checkout'])->name("checkout");
 Route::post('/checkout', [orderController::class, 'makeOrder'])->name("make_order");
 
 // Отслеживание админ панели
+Route::get('/login_admin', [adminController::class, 'loginAdmin'])->name("login_admin");
+Route::post('/login_admin', [adminController::class, 'loginAdminForm'])->name("login_admin_form");
 Route::get('/admin', [adminController::class, 'ordersAdmin'])->name("orders");
 Route::get('/order_info/{id}', [adminController::class, 'orderInfo'])->name("order_info");
 Route::get('/products', [adminController::class, 'products'])->name("products");
