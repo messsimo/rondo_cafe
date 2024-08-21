@@ -53,5 +53,16 @@ Rondo Lounge Cafe is an interactive CRUD application for a restaurant in Chisina
 
 ## Screenshots
 <p align="center">
-  <img src="resources/images/readme1.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme1.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme2.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme3.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme4.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme5.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme6.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme7.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme8.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme9.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme10.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme11.png" alt="Скриншот 1" width="200"/>
+    <img src="resources/readme_images/readme12.png" alt="Скриншот 1" width="200"/>
 </p>
